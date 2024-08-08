@@ -66,8 +66,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1(express@4.19.2)
       validator:
-        specifier: ^13.11.0
-        version: 13.11.0
+        specifier: ^13.12.0
+        version: 13.12.0
       winston:
         specifier: ^3.13.1
         version: 3.13.1
@@ -2695,8 +2695,8 @@ packages:
     resolution: {integrity: sha512-6z3GW9x8G1gd+JIIgQQQxXuiJtCXeAjp6RaPEPLv62mH3iPHPxV6W3robxtCzNErRo6ZwTmzWhsbNvjyEBKzKA==}
     engines: {node: '>=10.12.0'}
 
-  validator@13.11.0:
-    resolution: {integrity: sha512-Ii+sehpSfZy+At5nPdnyMhx78fEoPDkR2XW/zimHEL3MyGJQOCQ7WeP20jPYRz7ZCpcKLB21NxuXHF3bxjStBQ==}
+  validator@13.12.0:
+    resolution: {integrity: sha512-c1Q0mCiPlgdTVVVIJIrBuxNicYE+t/7oKeI9MWLj3fh/uq2Pxh/3eeWbVZ4OcGW1TUf53At0njHw5SMdA3tmMg==}
     engines: {node: '>= 0.10'}
 
   vary@1.1.2:
@@ -5917,7 +5917,7 @@ snapshots:
       '@types/istanbul-lib-coverage': 2.0.4
       convert-source-map: 1.9.0
 
-  validator@13.11.0: {}
+  validator@13.12.0: {}
 
   vary@1.1.2: {}
 
@@ -6033,6 +6033,6 @@ snapshots:
     dependencies:
       lodash.get: 4.4.2
       lodash.isequal: 4.5.0
-      validator: 13.11.0
+      validator: 13.12.0
     optionalDependencies:
       commander: 9.5.0
