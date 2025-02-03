@@ -45,8 +45,8 @@ importers:
         specifier: ^2.30.1
         version: 2.30.1
       mongoose:
-        specifier: ^8.9.5
-        version: 8.9.5(socks@2.7.1)
+        specifier: ^8.9.6
+        version: 8.9.6(socks@2.7.1)
       morgan:
         specifier: ^1.10.0
         version: 1.10.0
@@ -289,8 +289,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/runtime@7.26.0':
-    resolution: {integrity: sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==}
+  '@babel/runtime@7.26.7':
+    resolution: {integrity: sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.22.15':
@@ -563,8 +563,8 @@ packages:
   '@types/triple-beam@1.3.3':
     resolution: {integrity: sha512-6tOUG+nVHn0cJbVp25JFayS5UE6+xlbcNF9Lo9mU7U0zk3zeUShZied4YEQZjy1JBF043FSkdXw8YkUJuVtB5g==}
 
-  '@types/webidl-conversions@7.0.0':
-    resolution: {integrity: sha512-xTE1E+YF4aWPJJeUzaZI5DRntlkY3+BCVJi0axFptnjGmAoWxkyREIh/XMrfxVLejwQxMCfDXdICo0VLxThrog==}
+  '@types/webidl-conversions@7.0.3':
+    resolution: {integrity: sha512-CiJJvcRtIgzadHCYXw7dqEnMNRjhGZlYK05Mj9OyktqV8uVT8fD2BFOB7S1uwBE3Kj2Z+4UyPmFw/Ixgw/LAlA==}
 
   '@types/whatwg-url@11.0.5':
     resolution: {integrity: sha512-coYR071JRaHa+xoEvvYqvnIHaVqaYrLPbsufM9BF63HkwI5Lgmy2QR8Q5K/lYDYo5AK82wOvSOS0UsLTpTG7uQ==}
@@ -792,8 +792,8 @@ packages:
   bser@2.1.1:
     resolution: {integrity: sha512-gQxTNE/GAfIIrmHLUE3oJyp5FO6HRBfhjnw4/wMmA63ZGDJnWBmgY/lyQBpnDUkGmAhbSe39tx2d/iTOAfglwQ==}
 
-  bson@6.10.1:
-    resolution: {integrity: sha512-P92xmHDQjSKPLHqFxefqMxASNq/aWJMEZugpCjf+AF/pgcUpMMQCg7t7+ewko0/u8AapvF3luf/FoehddEK+sA==}
+  bson@6.10.2:
+    resolution: {integrity: sha512-5afhLTjqDSA3akH56E+/2J6kTDuSIlBxyXPdQslj9hcIgOUE378xdOfZvC/9q3LifJNI6KR/juZ+d0NRNYBwXg==}
     engines: {node: '>=16.20.1'}
 
   buffer-equal-constant-time@1.0.1:
@@ -1431,6 +1431,10 @@ packages:
 
   for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
+
+  for-each@0.3.4:
+    resolution: {integrity: sha512-kKaIINnFpzW6ffJNDjjyjrk21BkDx38c0xa/klsT8VzLCaMEefv4ZTacrcVR4DmgTeBra++jMDAfS/tS799YDw==}
+    engines: {node: '>= 0.4'}
 
   form-data@4.0.0:
     resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
@@ -2109,6 +2113,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.includes@4.3.0:
     resolution: {integrity: sha512-W3Bx6mdkRTGtlJISOvVD/lbqjTlPPUDTMnlXZFnVwi9NKJ6tiAk6LVdlhZMm17VZisqhKcgzpO5Wz91PCt5b0w==}
@@ -2118,6 +2123,7 @@ packages:
 
   lodash.isequal@4.5.0:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 
   lodash.isinteger@4.0.4:
     resolution: {integrity: sha512-DBwtEWN2caHQ9/imiNeEA5ys1JoRtRfY3d7V9wkqtbycnAmTvRRmbHKDV4a0EYc678/dia0jrte4tjYwVBaZUA==}
@@ -2230,8 +2236,8 @@ packages:
   moment@2.30.1:
     resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
 
-  mongodb-connection-string-url@3.0.1:
-    resolution: {integrity: sha512-XqMGwRX0Lgn05TDB4PyG2h2kKO/FfWJyCzYQbIhXUxz7ETt0I/FqHjUeqj37irJ+Dl1ZtU82uYyj14u2XsZKfg==}
+  mongodb-connection-string-url@3.0.2:
+    resolution: {integrity: sha512-rMO7CGo/9BFwyZABcKAWL8UJwH/Kc2x0g72uhDWzG48URRax5TCIcJ7Rc3RZqffZzO/Gwff/jyKwCU9TN8gehA==}
 
   mongodb@6.12.0:
     resolution: {integrity: sha512-RM7AHlvYfS7jv7+BXund/kR64DryVI+cHbVAy9P61fnb1RcWZqOW1/Wj2YhqMCx+MuYhqTRGv7AwHBzmsCKBfA==}
@@ -2260,8 +2266,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@8.9.5:
-    resolution: {integrity: sha512-SPhOrgBm0nKV3b+IIHGqpUTOmgVL5Z3OO9AwkFEmvOZznXTvplbomstCnPOGAyungtRXE5pJTgKpKcZTdjeESg==}
+  mongoose@8.9.6:
+    resolution: {integrity: sha512-ipLvXwNPVuuuq5H3lnSD0lpaRH3DlCoC6emnMVJvweTwxU29uxDJWxMsNpERDQt8JMvYF1HGVuTK+Id2BlQLCA==}
     engines: {node: '>=16.20.1'}
 
   morgan@1.10.0:
@@ -2531,6 +2537,10 @@ packages:
 
   punycode@2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
+    engines: {node: '>=6'}
+
+  punycode@2.3.1:
+    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
   pure-rand@6.0.3:
@@ -2917,9 +2927,9 @@ packages:
     resolution: {integrity: sha512-WBx8Uy5TLtOSRtIq+M03/sKDrXCLHxwDcquSP2c43Le03/9serjQBIztjRz6FkJez9D/hleyAXTBGLwwZUw9lA==}
     hasBin: true
 
-  tr46@4.1.1:
-    resolution: {integrity: sha512-2lv/66T7e5yNyhAAC4NaKe5nVavzuGJQVVtRYLyQ2OI8tsJ61PMLlelehb0wi2Hx6+hT/OJUWZcw8MjlSRnxvw==}
-    engines: {node: '>=14'}
+  tr46@5.0.0:
+    resolution: {integrity: sha512-tk2G5R2KRwBd+ZN0zaEXpmzdKyOYksXwywulIX95MBODjSzMIuQnQ3m8JxgbhnL1LeVo7lqQKsYa1O3Htl7K5g==}
+    engines: {node: '>=18'}
 
   triple-beam@1.4.1:
     resolution: {integrity: sha512-aZbgViZrg1QNcG+LULa7nhZpJTZSLm/mXnHXnbAbjmN5aSa0y7V+wvv6+4WaBtpISJzThKy+PIPxc1Nq1EJ9mg==}
@@ -3042,9 +3052,9 @@ packages:
     resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
     engines: {node: '>=12'}
 
-  whatwg-url@13.0.0:
-    resolution: {integrity: sha512-9WWbymnqj57+XEuqADHrCJ2eSXzn8WXIW/YSGaZtb2WKAInQ6CHfaUUcTyyver0p8BDg5StLQq8h1vtZuwmOig==}
-    engines: {node: '>=16'}
+  whatwg-url@14.1.0:
+    resolution: {integrity: sha512-jlf/foYIKywAt3x/XWKZ/3rz8OSJPiWktjmk891alJUEjiVxKX9LEO92qH3hv4aJ0mN3MWPvGMCy8jQi95xK4w==}
+    engines: {node: '>=18'}
 
   which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
@@ -3174,7 +3184,7 @@ snapshots:
       '@babel/traverse': 7.22.20
       '@babel/types': 7.22.19
       convert-source-map: 1.9.0
-      debug: 4.3.4(supports-color@5.5.0)
+      debug: 4.4.0
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -3324,7 +3334,7 @@ snapshots:
       '@babel/core': 7.22.20
       '@babel/helper-plugin-utils': 7.22.5
 
-  '@babel/runtime@7.26.0':
+  '@babel/runtime@7.26.7':
     dependencies:
       regenerator-runtime: 0.14.1
 
@@ -3737,11 +3747,11 @@ snapshots:
 
   '@types/triple-beam@1.3.3': {}
 
-  '@types/webidl-conversions@7.0.0': {}
+  '@types/webidl-conversions@7.0.3': {}
 
   '@types/whatwg-url@11.0.5':
     dependencies:
-      '@types/webidl-conversions': 7.0.0
+      '@types/webidl-conversions': 7.0.3
 
   '@types/yargs-parser@21.0.0': {}
 
@@ -4036,7 +4046,7 @@ snapshots:
     dependencies:
       node-int64: 0.4.0
 
-  bson@6.10.1: {}
+  bson@6.10.2: {}
 
   buffer-equal-constant-time@1.0.1: {}
 
@@ -4578,7 +4588,7 @@ snapshots:
 
   eslint-plugin-jsx-a11y@6.7.1(eslint@8.57.1):
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.26.7
       aria-query: 5.3.2
       array-includes: 3.1.8
       array.prototype.flatmap: 1.3.3
@@ -4855,6 +4865,10 @@ snapshots:
   fn.name@1.1.0: {}
 
   for-each@0.3.3:
+    dependencies:
+      is-callable: 1.2.7
+
+  for-each@0.3.4:
     dependencies:
       is-callable: 1.2.7
 
@@ -5845,22 +5859,22 @@ snapshots:
 
   moment@2.30.1: {}
 
-  mongodb-connection-string-url@3.0.1:
+  mongodb-connection-string-url@3.0.2:
     dependencies:
       '@types/whatwg-url': 11.0.5
-      whatwg-url: 13.0.0
+      whatwg-url: 14.1.0
 
   mongodb@6.12.0(socks@2.7.1):
     dependencies:
       '@mongodb-js/saslprep': 1.1.9
-      bson: 6.10.1
-      mongodb-connection-string-url: 3.0.1
+      bson: 6.10.2
+      mongodb-connection-string-url: 3.0.2
     optionalDependencies:
       socks: 2.7.1
 
-  mongoose@8.9.5(socks@2.7.1):
+  mongoose@8.9.6(socks@2.7.1):
     dependencies:
-      bson: 6.10.1
+      bson: 6.10.2
       kareem: 2.6.3
       mongodb: 6.12.0(socks@2.7.1)
       mpath: 0.9.0
@@ -5891,7 +5905,7 @@ snapshots:
 
   mquery@5.0.0:
     dependencies:
-      debug: 4.3.4(supports-color@5.5.0)
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
@@ -6154,6 +6168,8 @@ snapshots:
   pstree.remy@1.1.8: {}
 
   punycode@2.3.0: {}
+
+  punycode@2.3.1: {}
 
   pure-rand@6.0.3: {}
 
@@ -6624,9 +6640,9 @@ snapshots:
     dependencies:
       nopt: 1.0.10
 
-  tr46@4.1.1:
+  tr46@5.0.0:
     dependencies:
-      punycode: 2.3.0
+      punycode: 2.3.1
 
   triple-beam@1.4.1: {}
 
@@ -6680,7 +6696,7 @@ snapshots:
   typed-array-byte-length@1.0.3:
     dependencies:
       call-bind: 1.0.8
-      for-each: 0.3.3
+      for-each: 0.3.4
       gopd: 1.2.0
       has-proto: 1.2.0
       is-typed-array: 1.1.15
@@ -6697,7 +6713,7 @@ snapshots:
     dependencies:
       available-typed-arrays: 1.0.7
       call-bind: 1.0.8
-      for-each: 0.3.3
+      for-each: 0.3.4
       gopd: 1.2.0
       has-proto: 1.2.0
       is-typed-array: 1.1.15
@@ -6712,7 +6728,7 @@ snapshots:
   typed-array-length@1.0.7:
     dependencies:
       call-bind: 1.0.8
-      for-each: 0.3.3
+      for-each: 0.3.4
       gopd: 1.2.0
       is-typed-array: 1.1.15
       possible-typed-array-names: 1.0.0
@@ -6768,9 +6784,9 @@ snapshots:
 
   webidl-conversions@7.0.0: {}
 
-  whatwg-url@13.0.0:
+  whatwg-url@14.1.0:
     dependencies:
-      tr46: 4.1.1
+      tr46: 5.0.0
       webidl-conversions: 7.0.0
 
   which-boxed-primitive@1.0.2:
@@ -6825,7 +6841,7 @@ snapshots:
       available-typed-arrays: 1.0.7
       call-bind: 1.0.8
       call-bound: 1.0.3
-      for-each: 0.3.3
+      for-each: 0.3.4
       gopd: 1.2.0
       has-tostringtag: 1.0.2
 
