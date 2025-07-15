@@ -27,8 +27,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0
       express-rate-limit:
-        specifier: ^7.5.1
-        version: 7.5.1(express@5.1.0)
+        specifier: ^8.0.0
+        version: 8.0.0(express@5.1.0)
       helmet:
         specifier: ^8.1.0
         version: 8.1.0
@@ -1496,8 +1496,8 @@ packages:
     resolution: {integrity: sha512-PZBs5nwhD6ek9ZuP+W2xmpvcrHwXZxD5GdieX2dsjPbAbH4azOkrHbycBud2QRU+YQF1CT+pki/lZGedHgo/dQ==}
     engines: {node: '>=10'}
 
-  express-rate-limit@7.5.1:
-    resolution: {integrity: sha512-7iN8iPMDzOMHPUYllBEsQdWVB6fPDMPqwjBaFrgr4Jgr/+okjvzAy+UHlYYL/Vs0OsOrMkwS6PJDkFlJwoxUnw==}
+  express-rate-limit@8.0.0:
+    resolution: {integrity: sha512-FXEAp2ccTeN1ZSO+sPHRHWB0/CrTP5asFBjUaNeD9A0v3iPmgFbLu24vqPjiM9utszI58VGlMokjXQ0W9Dbmjw==}
     engines: {node: '>= 16'}
     peerDependencies:
       express: '>= 4.11'
@@ -5047,9 +5047,10 @@ snapshots:
 
   express-mongo-sanitize@2.2.0: {}
 
-  express-rate-limit@7.5.1(express@5.1.0):
+  express-rate-limit@8.0.0(express@5.1.0):
     dependencies:
       express: 5.1.0
+      ip: 2.0.1
 
   express@5.1.0:
     dependencies:
@@ -5419,8 +5420,7 @@ snapshots:
       hasown: 2.0.2
       side-channel: 1.1.0
 
-  ip@2.0.1:
-    optional: true
+  ip@2.0.1: {}
 
   ipaddr.js@1.9.1: {}
 
