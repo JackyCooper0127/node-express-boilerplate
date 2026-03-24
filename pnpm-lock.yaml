@@ -36,8 +36,8 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0
       joi:
-        specifier: ^18.1.0
-        version: 18.1.0
+        specifier: ^18.1.1
+        version: 18.1.1
       jsonwebtoken:
         specifier: ^9.0.3
         version: 9.0.3
@@ -2187,8 +2187,8 @@ packages:
       node-notifier:
         optional: true
 
-  joi@18.1.0:
-    resolution: {integrity: sha512-algJcmGHuw5Kxl7Y5vNT4OF99U6hJ1JALe3nLXREXMkKeQ513fv6XulXTppKHn08tydK6MQB16eAFV55qwFvOA==}
+  joi@18.1.1:
+    resolution: {integrity: sha512-pJkBiPtNo+o0h19LfSvUN46Y5zY+ck99AtHwch9n2HqVLNRgP0ZMyIH8FRMoP+HV8hy/+AG99dXFfwpf83iZfQ==}
     engines: {node: '>= 20'}
 
   js-tokens@4.0.0:
@@ -5983,7 +5983,7 @@ snapshots:
       - supports-color
       - ts-node
 
-  joi@18.1.0:
+  joi@18.1.1:
     dependencies:
       '@hapi/address': 5.1.1
       '@hapi/formula': 3.0.2
