@@ -67,7 +67,7 @@
     "eslint-plugin-jest": "^29.16.0",
     "eslint-plugin-prettier": "^5.5.6",
     "eslint-plugin-security": "^4.0.1",
-    "jest": "^30.4.2",
+    "jest": "^30.5.0",
     "node-mocks-http": "^1.18.1",
     "nodemon": "^3.1.14",
     "prettier": "^3.9.6",
